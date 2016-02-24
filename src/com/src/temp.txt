@@ -1,0 +1,22 @@
+About File Handling in Javas
+
+
+
+One this page you can find a simple guide to reading and writing files in the Java programming language. The code examples here give you everything you need to read and write files right away, and if you're in a hurry, you can use them without needing to understanding in detail how they work.
+
+File handling in Java is frankly a bit of a pig's ear, but it's not too complicated once you understand a few basic ideas. The key things to remember are as follows.
+
+You can read files using these classes:
+
+
+    FileReader for text files in your system's default encoding (for example, files containing Western European characters on a Western European computer).
+    FileInputStream for binary files and text&&&& files that contain 'weird' characters. %%%%%
+
+
+
+FileReader (for text files) should usually be wrapped in a BufferedFileReader. This saves up data so you can deal with it a line at a time or whatever instead of character by character (which usually isn't much use).
+
+If you want to write files, basically all the same stuff applies, except you'll deal with classes named FileWriter with BufferedFileWriter for text files, or FileOutputStream for binary files.
+
+
+10: 20
